@@ -1,12 +1,12 @@
-const animal_buttons = document.getElementsByName("animal-button")
+const school_buttons = document.getElementsByName("school-button")
 const text = document.querySelector("#text")
 const photo =  document.querySelector("#photo")
 
-animal_buttons.forEach(button => {
+school_buttons.forEach(button => {
     button.addEventListener("change", event => {
         
         
-        text.innerHTML = "Here's a picture of a " + button.value
+        text.innerHTML = "Here's a picture of " + button.value
         photo.src = button.value + ".jpeg"
 
 
